@@ -9,7 +9,7 @@
 # not mistaken for each other in the gallery.
 #
 # WHY THESE KEY NAMES
-#   `theme.colors` accepts any kebab-case key, but only the keys in
+#   `design.colors` accepts any kebab-case key, but only the keys in
 #   `COLOR_TO_SV_TOKEN` (src/infrastructure/css/theme/theme-generators.ts) emit
 #   the `--sv-*` platform tokens every prestyled island consumes. Everything
 #   else emits `--color-*` and does nothing until something cites it — and this
@@ -87,7 +87,7 @@ colors:
   warning: '#b45309'
   error: '#be123c'
 
-# Rendered only when the app declares `theme.colorScheme` or ships a
+# Rendered only when the app declares `design.colorScheme` or ships a
 # `theme-toggle`; the stylesheet carries it either way, under
 # `html:is(.dark, [data-theme='dark'])`. `primary` lightens sharply here: navy
 # on a near-black background is unreadable, so dark mode borrows the lighter end
@@ -110,7 +110,7 @@ darkColors:
   warning: '#fbbf24'
   error: '#fb7185'
 
-borderRadius:
+radius:
   sm: 0.25rem
   md: 0.5rem
   lg: 0.75rem
